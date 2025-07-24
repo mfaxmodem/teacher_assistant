@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ورود / ثبت‌نام</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form" id="login-form">
+            <h2>ورود به سیستم</h2>
+            <input type="text" id="login-username" placeholder="نام کاربری">
+            <input type="password" id="login-password" placeholder="رمز عبور">
+            <button id="login-btn">ورود</button>
+            <p class="toggle-link">حساب کاربری ندارید؟ <a href="#" id="show-register">ثبت‌نام کنید</a></p>
+            <div id="login-error" class="error-message"></div>
+        </div>
+        <div class="auth-form hidden" id="register-form">
+            <h2>ثبت‌نام دستیار هوشمند</h2>
+            <input type="text" id="register-username" placeholder="نام کاربری">
+            <input type="password" id="register-password" placeholder="رمز عبور">
+            <input type="number" id="register-experience" placeholder="سابقه تدریس (سال)">
+            <input type="text" id="register-subject" placeholder="عنوان درس اصلی">
+            <input type="text" id="register-field" placeholder="رشته فنی">
+            <button id="register-btn">ثبت‌نام</button>
+            <p class="toggle-link">حساب کاربری دارید؟ <a href="#" id="show-login">وارد شوید</a></p>
+            <div id="register-error" class="error-message"></div>
+        </div>
+    </div>
+    <script src="/static/login.js"></script>
+</body>
+</html>

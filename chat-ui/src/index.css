@@ -1,0 +1,26 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Vazir', sans-serif;
+  }
+  
+  html {
+    direction: rtl;
+  }
+  
+  body {
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+  }
+}
+
+@layer components {
+  .rtl {
+    direction: rtl;
+  }
+}
+

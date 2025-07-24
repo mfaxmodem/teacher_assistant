@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دستیار هوشمند معلم</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="info-modal-overlay">
+        <div id="info-modal">
+            <h2>اطلاعات اولیه معلم</h2>
+            <p>لطفاً برای شروع، اطلاعات زیر را تکمیل کنید.</p>
+            <div id="modal-form">
+                <input type="number" id="experience-input" placeholder="سابقه تدریس (به سال)">
+                <input type="text" id="subject-input" placeholder="عنوان درس اصلی">
+                <input type="text" id="field-input" placeholder="رشته فنی">
+                <div id="modal-error" class="error-message"></div>
+                <button id="start-chat-btn">شروع گفتگو</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chat-container" class="hidden">
+        <div id="chat-header">دستیار هوشمند آموزشی</div>
+        <div id="chat-window">
+            </div>
+        <div id="chat-input-container">
+            <input type="text" id="chat-input" placeholder="پیام خود را تایپ کنید..." disabled>
+            <button id="send-btn" disabled>ارسال</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دستیار هوشمند معلم</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <div id="main-container">
+        <div id="sidebar-overlay" class="hidden"></div>
+
+        <div id="sidebar">
+            <div class="sidebar-header">
+                <div class="avatar">U</div>
+                <span id="username-display"></span>
+                <button id="close-sidebar-btn" title="بستن منو">×</button>
+            </div>
+            <button id="new-chat-btn"><i class="fas fa-plus"></i> گفتگوی جدید</button>
+            <div id="conversation-list"></div>
+            <button id="logout-btn"><i class="fas fa-sign-out-alt"></i> خروج از حساب</button>
+        </div>
+        
+        <div id="chat-container">
+            <div id="chat-header">
+                <button id="menu-btn" title="نمایش منو">☰</button>
+                <span>دستیار هوشمند آموزشی</span>
+            </div>
+            <div id="chat-window-wrapper">
+                <div id="loading-spinner" class="hidden">در حال بارگذاری...</div>
+                <div id="chat-window"></div>
+            </div>
+            <div id="chat-input-area">
+                <div id="chat-input-container">
+                    <textarea id="chat-input" placeholder="پیام خود را تایپ کنید..." rows="1"></textarea>
+                    <button id="send-btn" title="ارسال">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/app_script.js"></script>
+</body>
+</html>

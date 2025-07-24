@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+google-generativeai
+faiss-cpu
+pypdf
+langchain-text-splitters
+numpy
+passlib[bcrypt]
+ollama
+openai
+rank-bm25
