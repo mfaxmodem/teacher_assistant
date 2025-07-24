@@ -74,7 +74,7 @@ uvicorn main:app --reload
 cd persian-chat-ui
 pnpm install
 pnpm dev
-
+```sh
 
  ۶. نقشه راه و بهبودهای آینده
 تحلیل بازخورد و بهینه‌سازی مدل
